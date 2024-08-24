@@ -1,0 +1,194 @@
+.mortgage {
+    margin-bottom: 260px;
+}
+
+
+.mortgage__title {
+    margin-bottom: 40px;
+}
+
+
+.mortgage__calculate {
+    display: flex;
+    box-shadow: 0 0 30px 0 rgba(15, 17, 18, 0.05);
+    background: var(--base-white);
+    padding: 40px;
+    gap: 51px;
+}
+
+.mortgage__form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 40px;
+    max-width: 790px;
+    font-family: var(--font-family);
+}
+
+.mortgage__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.mortgage__input-label {
+
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black-60);
+}
+
+.mortgage__input {
+    border: 1px solid var(--black-stroke);
+    font-family: var(--font-family);
+    padding: 12px 16px;
+    max-width: 100%;
+    color: var(--black-100);
+}
+
+.mortgage__input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black-lbl);
+}
+
+.mortgage__button {
+    margin-top: 10px;
+    font-family: var(--font-family);
+}
+
+
+.mortgage__result {
+    min-height: 192px;
+    border-left: 1px solid var(--black-stroke);
+}
+
+.calculate__result {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    justify-content: space-between;
+    padding-left: 51px;
+
+}
+
+.calculate__result-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 218px;
+}
+
+.result__title {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black-lbl);
+}
+
+.result__text {
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--black-100);
+}
+
+
+@media(max-width: 1460px) {
+
+    .mortgage__calculate {
+        gap: 45px;
+    }
+
+    .mortgage__form {
+        max-width: 745px;
+    }
+}
+
+@media(max-width: 1448px) {
+    .mortgage__input-block {
+        max-width: 100%;
+    }
+
+    .calculate__result {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 768px) {
+
+    .mortgage {
+        margin-bottom: 200px;
+    }
+
+    .mortgage__calculate {
+        gap: 40px;
+    }
+
+    .mortgage__form {
+        row-gap: 20px;
+    }
+
+    .mortgage__input {
+        font-size: 18px;
+    }
+
+    .mortgage__input:placeholder {
+        font-size: 18px;
+    }
+
+    .mortgage__result {
+        padding: 8px 0;
+    }
+
+    .calculate__result {
+        padding-left: 40px;
+    }
+}
+
+
+@media(max-width: 578px) {
+
+    .mortgage {
+        margin-bottom: 180px;
+    }
+
+    .mortgage__calculate {
+        flex-direction: column;
+        padding: 24px 20px;
+        gap: 30px;
+    }
+
+    .mortgage__title {
+        margin-bottom: 25px;
+    }
+
+    .mortgage__input-label {
+        font-size: 14px;
+    }
+
+    .mortgage__input {
+        font-size: 16px;
+    }
+
+    .mortgage__input::placeholder {
+        font-size: 16px;
+    }
+
+    .mortgage__button {
+        padding: 12px 70px;
+    }
+
+    .mortgage__result {
+        border-left: 0;
+        border-top: 1px solid var(--black-stroke);
+    }
+
+    .calculate__result {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+}

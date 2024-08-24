@@ -1,0 +1,149 @@
+.question {
+    margin-bottom: 250px;
+}
+
+.question__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-blue);
+
+}
+
+.question__form-wrap {
+    padding: 60px;
+}
+
+.question__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 588px;
+}
+
+.question__title {
+    margin-bottom: 50px;
+}
+
+.question__label {
+    margin-bottom: 30px;
+    max-width: 407px;
+}
+
+.question__label-input {
+    background-color: transparent;
+    font-family: var(--font-family);
+    color: var(--black-100);
+    padding: 12px 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--black-20);
+}
+
+.question__label-input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black-100);
+}
+
+.question__submit {
+    display: inline-block;
+    max-width: 223px;
+    margin-top: 20px;
+    font-family: var(--font-family);
+}
+
+.question__pic {
+    display: block;
+}
+
+.question__pic img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.error {
+    border-bottom: 1px solid red;
+}
+
+@media(max-width: 768px) {
+
+    .question {
+        margin-bottom: 200px;
+    }
+
+    .question__inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .question__form-wrap {
+        padding: 0 40px 30px;
+    }
+
+    .question__pic {
+        order: -1;
+    }
+
+    .question__pic img {
+        width: 100%;
+        height: 370px;
+    }
+
+    .question__title {
+        margin-bottom: 30px;
+    }
+
+    .question__label-input {
+        font-size: 18px;
+    }
+
+    .question__label-input::placeholder {
+        font-size: 18px;
+    }
+
+    .question__submit {
+        margin-top: 0;
+        padding: 12px 71px;
+    }
+}
+
+@media(max-width: 578px) {
+
+    .question {
+        margin-bottom: 180px;
+    }
+
+    .question__inner {
+        gap: 25px;
+    }
+
+    .question__form-wrap {
+        padding: 0 16px 25px;
+
+    }
+
+    .question__title {
+        margin-bottom: 20px;
+    }
+
+    .question__label {
+        margin-bottom: 20px;
+    }
+
+    .question__label-input {
+        font-size: 16px;
+    }
+
+    .question__label-input::placeholder {
+        font-size: 16px;
+    }
+
+    .question__submit {
+        margin-top: 20px;
+    }
+
+    .question__pic img {
+        height: 200px;
+    }
+}

@@ -1,0 +1,18 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./default.css";
+
+
+@import "./header.css";
+@import "./place.css";
+@import "./company.css";
+@import "./invesmet.css";
+@import "./service.css";
+@import "./choose.css";
+@import "./buildings.css";
+@import "./mortgage.css";
+@import "./question.css";
+
+@import "./blog.css";
+
+@import "./footer.css";

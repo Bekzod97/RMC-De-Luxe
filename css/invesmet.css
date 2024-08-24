@@ -1,0 +1,175 @@
+.invesment {
+    padding: 80px 0;
+    background-color: var(--bg-blue);
+    margin-bottom: 250px;
+}
+
+.invesment__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invesment__info {
+    max-width: 710px;
+}
+
+.invesment__title {
+    margin-bottom: 40px;
+}
+
+.invesment__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.invesment__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-100);
+    line-height: 1.2;
+}
+
+.invesment__pic {
+    position: relative;
+    min-height: 668px;
+    min-width: 558px;
+    object-fit: cover;
+}
+
+.invesment__big-img {
+    position: absolute;
+    right: 0;
+}
+
+.invesment__small-img {
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+}
+
+.invesment__small-mobile {
+    display: none;
+}
+
+.invesment__link-mobile {
+    display: none;
+}
+
+.investment__title-mobile {
+    display: none;
+}
+
+@media(max-width: 991px) {
+
+    .invesment__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .invesment__info {
+        max-width: 100%;
+    }
+
+    .invesment__list {
+        margin-bottom: 50px;
+    }
+
+    .invesment__link {
+        display: none;
+    }
+
+    .invesment__pic {
+        display: flex;
+        gap: 12px;
+        position: relative;
+        min-height: 100%;
+        min-width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+    .invesment__big-img {
+        position: relative;
+        width: 50%;
+    }
+
+    .invesment__small-img {
+        display: none;
+    }
+
+    .invesment__small-mobile {
+        display: flex;
+        width: 50%;
+    }
+
+    .invesment__link-mobile {
+        display: flex;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .invesment {
+        padding: 50px 0;
+        margin-bottom: 200px;
+    }
+
+    .invesment__text {
+        line-height: 1.4;
+    }
+
+    .investment__title-mobile {
+        display: block;
+    }
+}
+
+
+
+@media(max-width: 578px) {
+
+    .invesment {
+        padding: 30px 0;
+        margin-bottom: 180px;
+    }
+
+    .invesment__inner {
+        position: relative;
+    }
+
+    .investment__title-mobile {
+        display: block;
+    }
+
+    .invesment__pic {
+        order: -1;
+        margin-top: 93px;
+        margin-bottom: 16px;
+    }
+
+    .invesment__title {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .invesment__text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .invesment__list {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 346px) {
+    .invesment__pic {
+        margin-top: 122px;
+    }
+}

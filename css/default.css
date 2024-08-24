@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    box-sizing: border-box;
+
+}
+
+body.body-low {
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+:root {
+    --beigie-100: #e1af93;
+    --beigie-70: #eac7b4;
+    --beigie-40: #f3dfd4;
+    --beigie-10: #fcf7f4;
+    --beigie-120: #b48c76;
+    --black-100: #333;
+    --black-60: #858585;
+    --black-20: #d6d6d6;
+    --black-lbl: #b3b3b3;
+    --black-stroke: #eaeaea;
+    --base-white: #fff;
+    --bg-grey: #f7f7f7;
+    --bg-blue: #edf3f5;
+    --system-red: #ff4f4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.2;
+    color: var(--black-100);
+}
+
+.more {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--base-white);
+    padding: 12px 65px;
+    background-color: var(--beigie-100);
+}
+
+.more:hover {
+    background-color: #c37e57;
+}
+
+.more:active {
+    background-color: var(--beigie-100);
+    transform: translateY(1px);
+}
+
+.slide-btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--base-white);
+    border-radius: 100%;
+}
+
+.btn-prev:hover {
+    transform: translateX(-3px);
+}
+
+.btn-next:hover {
+    transform: translateX(3px);
+}
+
+.btn-prev:active {
+    transform: translateX(1px);
+}
+
+.btn-next:active {
+    transform: translateX(-1px);
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .slide-btn {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(max-width: 578px) {
+
+    .slide-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .slide-btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}

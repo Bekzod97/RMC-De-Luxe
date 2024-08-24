@@ -1,0 +1,375 @@
+.header {
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 177px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-menu__item {
+    position: relative;
+}
+
+.menu-item__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-100);
+}
+
+.menu-item__link path {
+    stroke: #333333;
+}
+
+.header__submenu {
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+    background: var(--base-white);
+    padding-top: 12px;
+    width: 350px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+}
+
+.submenu__item {
+    border-bottom: 1px solid var(--black-stroke);
+}
+
+.submenu-item__link {
+    display: block;
+    padding: 10px 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black-100);
+}
+
+.header-menu__item:hover .menu-item__link {
+
+    color: var(--beigie-100);
+}
+
+.header-menu__item:hover path {
+    stroke: var(--beigie-100);
+}
+
+.header-menu__item:hover .header__submenu {
+    display: flex;
+}
+
+.submenu__item:hover {
+    background: var(--beigie-10);
+    border-color: transparent;
+}
+
+.submenu__item:hover .submenu-item__link {
+    color: var(--beigie-100);
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.header-icons__item {
+    padding: 13px;
+    border: 1px solid var(--black-stroke);
+    border-radius: 100%;
+}
+
+.call__btn {
+    background-color: var(--black-100);
+}
+
+.lang {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.change__lang {
+    padding: 11px 17px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--black-stroke);
+    border-radius: 100px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-100);
+    min-width: 79px;
+}
+
+.lang__icon {
+    position: absolute;
+    left: 56px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* burger block */
+
+
+.burger__bloc {
+    display: flex;
+    align-items: center;
+}
+
+
+/* burger menu */
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black-100);
+    padding: 13px;
+    border-radius: 100%;
+    pointer-events: auto;
+}
+
+.burger span {
+    height: 2px;
+    width: 24px;
+    transform: calc(1);
+    background-color: #fff;
+}
+
+.burger::before,
+.burger::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.burger::before {
+    top: 18px;
+}
+
+.burger::after {
+    bottom: 18px;
+}
+
+.burger.burger-active span {
+    transform: scale(0);
+}
+
+.burger.burger-active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.burger-active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+.header-open {
+    display: flex !important;
+}
+
+.header__submenu.submenu-active {
+    display: flex;
+    position: relative;
+    top: 0;
+    box-shadow: none;
+}
+
+.header__mobile-link {
+    display: none;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    padding: 12px 53px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--base-white);
+    width: 223px;
+    /* margin-left: 24px; */
+}
+
+.header__mobile-link-active.header__mobile-link-active {
+    display: inline-block;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile.lang__mobile-active {
+    position: relative;
+    z-index: 1000;
+    display: block;
+    pointer-events: auto;
+}
+
+.burger__bloc.burger__bloc-active {
+    position: absolute;
+    right: 15px;
+}
+
+
+@media (hover: none) {
+    .header-menu__item:hover .header__submenu {
+        display: none;
+    }
+}
+
+@media (hover: none) {
+    .header-menu__item:hover .submenu-active {
+        display: flex;
+    }
+}
+
+@media(max-width: 991px) {
+
+
+    .burger {
+        display: flex;
+    }
+
+    .header__nav {
+        display: none;
+        flex-direction: column;
+        gap: 32px;
+        position: fixed;
+        height: 100%;
+        width: 408px;
+        z-index: 50;
+        right: 0;
+        top: 0;
+        overflow-y: auto;
+        padding: 100px 0 0 0;
+        background-color: var(--base-white);
+        pointer-events: auto;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding-top: 25px;
+        padding-left: 25px;
+        border-top: 1px solid var(--black-stroke);
+    }
+
+    .submenu__item {
+        border-bottom: none;
+
+    }
+
+    .call__btn {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+
+    .menu-item__link {
+        font-size: 24px;
+    }
+
+    .submenu-item__link {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 578px) {
+
+    .header__img {
+        max-width: 142px;
+    }
+
+    .header__icons {
+        gap: 5px;
+    }
+
+    .header-icons__item {
+
+        padding: 10px;
+    }
+
+    .header__icon-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .burger {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .burger span {
+        width: 20px;
+    }
+
+    .burger::before,
+    .burger::after {
+        width: 20px;
+    }
+
+    .burger::before {
+        top: 13px;
+    }
+
+    .burger::after {
+        bottom: 13px;
+    }
+
+    .header__nav {
+        width: 265px;
+    }
+
+    .mobile.lang__mobile-active {
+        padding: 8px;
+    }
+
+    .menu-item__link {
+        font-size: 20px;
+    }
+
+    .submenu-item__link {
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 400px) {
+
+    .header__inner {
+        overflow: hidden;
+    }
+}

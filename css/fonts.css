@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-family: "Jost", sans-serif;
+    --second-family: "Belleza", sans-serif;
+    --third-family: "Bellefair", sans-serif;
+    --font3: "Lato", sans-serif;
+    --font4: "WeblySleek UI", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-100);
+}

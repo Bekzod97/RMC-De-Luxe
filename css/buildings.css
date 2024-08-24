@@ -1,0 +1,183 @@
+.buildings {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 230px;
+}
+
+.buildings__inner {}
+
+.buildings__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.buildings__buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buildings__btn {
+    border-color: black;
+    width: 70px;
+    height: 70px;
+}
+
+.buildings__btn svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.buildings__bottom {
+    text-align: center;
+
+}
+
+.buildings__list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+    padding-right: 20%;
+    transition: 1s;
+}
+
+.building__item {
+    min-width: 467px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.building__item-img {
+    width: 100%;
+    transition: .6s;
+    display: block;
+}
+
+.building__item-wrap {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 1000;
+    text-align: start;
+}
+
+.building__liked {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+}
+
+.building__item-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--base-white);
+    margin-bottom: 14px;
+}
+
+.building__item-price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--base-white);
+}
+
+@media(max-width: 768px) {
+
+    .buildings {
+        margin-bottom: 200px;
+    }
+
+    .buildings__btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .buildings__list {
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .building__item {
+        min-width: 356px;
+        max-height: 500px;
+    }
+
+    .building__item-title {
+        margin-bottom: 8px;
+    }
+
+    .buildings__link {
+        padding: 12px 60px;
+    }
+}
+
+@media(max-width: 578px) {
+
+    .buildings {
+        margin-bottom: 295px;
+    }
+
+    .buildings__link {
+        padding: 12px 60px;
+    }
+
+    .buildings__buttons {
+        display: none;
+    }
+
+    .buildings__top {
+        margin-bottom: 25px;
+    }
+
+    .buildings__list {
+        flex-direction: column;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .building__item {
+        min-width: 100%;
+        max-height: 400px;
+    }
+
+    .building__item-img {
+        height: 400px;
+    }
+
+    .building__item-wrap {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .building__liked {
+        width: 26px;
+        height: 24px;
+    }
+
+    .building__liked svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .building__item-title {
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .building__item-price {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+
+}

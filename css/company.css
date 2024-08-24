@@ -1,0 +1,160 @@
+.company {
+    margin-bottom: 250px;
+}
+
+.company__inner {
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.company__top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.company__title span {
+    color: var(--beigie-100);
+}
+
+.company__info {
+    max-width: 710px;
+    min-height: 224px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.company__tabs {
+    display: flex;
+    gap: 120px;
+    border-bottom: 1px solid var(--black-stroke);
+}
+
+.company__tab-btn {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--black-60);
+    padding-bottom: 21px;
+    border-bottom: 1px solid transparent;
+}
+
+.company__tab-btn.company-active {
+    font-weight: 600;
+    color: var(--beigie-100);
+    border-bottom: 2px solid var(--beigie-100);
+
+}
+
+.company__descr {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.company__descr.decr-active {
+    display: flex;
+}
+
+.company__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--black-100);
+}
+
+.company__bottom {
+    background: url("../images/company/photo-1.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 579px;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.company__buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+    margin-left: 30px;
+}
+
+@media(max-width: 1132px) {
+    .company__top {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .company__info {
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .company {
+        margin-bottom: 200px;
+    }
+
+    .company__inner {
+        gap: 40px;
+    }
+
+    .company__info {
+        gap: 20px;
+    }
+
+    .company__tabs {
+        gap: 113px;
+    }
+
+    .company__text {
+        line-height: 1.4;
+    }
+
+    .company__bottom {
+        min-height: 454px;
+    }
+
+    .company__buttons {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+}
+
+
+@media(max-width: 578px) {
+
+    .company {
+        margin-bottom: 180px;
+    }
+
+    .company__top {
+        gap: 35px;
+    }
+
+    .company__tabs {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .company__tab-btn {
+        font-size: 16px;
+    }
+
+    .company__text {
+        font-size: 16px;
+    }
+
+    .company__bottom {
+        min-height: 240px;
+    }
+
+    .company__buttons {
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+}
