@@ -197,12 +197,7 @@
     display: flex !important;
 }
 
-.header__submenu.submenu-active {
-    display: flex;
-    position: relative;
-    top: 0;
-    box-shadow: none;
-}
+
 
 .header__mobile-link {
     display: none;
@@ -304,7 +299,15 @@
     .submenu-item__link {
         font-size: 20px;
     }
+
+    .header__submenu.submenu-active {
+        display: flex;
+        position: relative;
+        top: 0;
+        box-shadow: none;
+    }
 }
+
 
 @media(max-width: 578px) {
 
